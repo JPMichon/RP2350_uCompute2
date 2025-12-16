@@ -1,0 +1,3 @@
+Vous pouvez utiliser le firmware normale disponible ici.
+
+ https://micropython.org/download/RPI_PICO2/
