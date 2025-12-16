@@ -1,6 +1,8 @@
 # RP2350_uCompute2
 Plateforme de développement basé sur un RP2350
 taille: 96mm x 42mm
+<img width="2812" height="1257" alt="image" src="https://github.com/user-attachments/assets/fe666037-9144-4d45-a901-445b3db0c9fb" />
+
 <BR>
 
 
