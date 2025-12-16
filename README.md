@@ -59,7 +59,12 @@ _RX_PIN = 1 # TX Pin (GP1) <BR>
 ```
 
 ## Rendu 3D
-
+Revision 1.0
+<img width="2369" height="1046" alt="image" src="https://github.com/user-attachments/assets/9aa6d899-e73d-40f1-a001-2d875762987e" />
+<BR>
+Revision 1.1
+<img width="2264" height="992" alt="image" src="https://github.com/user-attachments/assets/7418f113-c4e0-4c5a-8be3-38eee2f376be" />
+<BR><BR>
 ## BOM
 Rev 1.0: 
 Rev 1.1: 
