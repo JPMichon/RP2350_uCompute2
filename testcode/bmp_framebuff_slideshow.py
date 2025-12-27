@@ -1,3 +1,7 @@
+#
+# Slideshow affichant des images BMP de 240x240 24bits sans compression sur un lcd ST7789
+# Les images peuvent etre soit dans le root de la carte sd ou dans le repertoire \bmp de la memoire flash
+#
 from machine import I2C, UART, SPI, PWM, Pin
 import st7789 as st7789
 import time
@@ -47,31 +51,21 @@ screen_rotation = 1
 
 #Initialisation des IOs
 System_LED = Pin(_Led_System,Pin.OUT)
-MicroSD_Detect = Pin(_MicroSD_Detect,Pin.IN)
 BTN_Analogue = machine.ADC(_Boutons) #Diviseur de tension des boutons
 MicroSD_Detect = Pin(_MicroSD_Detect,Pin.IN) # detection de la carte SD
 spi = SPI(0,baudrate=40000000,polarity=1,phase=0,bits=8,firstbit=SPI.MSB,sck=Pin(_ST7789_SCK),mosi=Pin(_ST7789_MOSI))
 display = st7789.ST7789(spi,screen_width,screen_height,reset=Pin(_ST7789_RESET, Pin.OUT),dc=Pin(_ST7789_DC, Pin.OUT),backlight=Pin(_ST7789_BL, Pin.OUT),rotation=screen_rotation)
 
-#print(spi)
-
-
-
-#        Args:
-#            mode (int): color mode
-#                COLOR_MODE_65K, COLOR_MODE_262K, COLOR_MODE_12BIT,
-#                COLOR_MODE_16BIT, COLOR_MODE_18BIT, COLOR_MODE_16M
-
-
-# Initialisation du FrameBuffer
-# FrameBuffer needs 2 bytes for every RGB565 pixel
+# initialisation du Framebuffer
 buffer_width = 240
 buffer_height = 240
 buffer = bytearray(buffer_width * buffer_height * 2)
 fbuf = framebuf.FrameBuffer(buffer, buffer_width, buffer_height, framebuf.RGB565)
 
+#-------------------------------------------------------------------------------------------------------------------------------
+# Routines
 
-
+#Converstion d'une couleur 24bits en Color565 compatible avec le framebuffer
 def color565(r, g, b):
     # same as your function:
     val16 = (r & 0xf8) << 8 | (g & 0xfc) << 3 | b >> 3
@@ -116,16 +110,20 @@ def Draw_BMP(strFile):
                 g = img_bytes[1]
                 b = img_bytes[2]
                 CouleurPixel = color565(r, g, b)
-                fbuf.pixel(y, x,CouleurPixel )  #Transpose les pixels de l'image dans le framebuffer
+                fbuf.pixel(y, x,CouleurPixel )  #Transpose les pixels de l'image dans le framebuffer en inversant l'axe x,y permettant une rotation de 90 deg
+                #fbuf.pixel(x, y,CouleurPixel )  #Transpose les pixels de l'image dans le framebuffer
                 
 
 #----------------------------------------------------------------------
+#main loop
+
+
 fbuf.fill(st7789.WHITE) # Efface l'écran (le framefuffer)
-fbuf.text("Loading...", 80, 120, st7789.BLACK)
-if MicroSD_Detect.value()==0: # si la carte est présente, j'accède a la carte
+fbuf.text("Loading...", 80, 120, st7789.BLACK) #Affiche un message a l'ecran
+if MicroSD_Detect.value()==0: # si la carte est présente, j'affiche un message
     fbuf.text("SD CARD Present", 50, 160, st7789.BLACK)
-    
 display.blit_buffer(buffer, 0, 0, buffer_width, buffer_height)
+
 fbuf.fill(st7789.WHITE) # Efface l'écran (le framefuffer)
 
 directory_path = "/bmp/" # repertoire par defaut pour les fichiers bmp
@@ -135,16 +133,18 @@ if MicroSD_Detect.value()==0: # si la carte est présente, j'accède a la carte
         spi = machine.SPI(1,baudrate=1600000,polarity=0,phase=0,bits=8,firstbit=machine.SPI.MSB,sck=machine.Pin(_SPI1_SCK),mosi=machine.Pin(_SPI1_MOSI),miso=machine.Pin(_SPI1_MISO))
         sd = sdcard.SDCard(spi,CS)
         vfs = uos.VfsFat(sd)
-        uos.mount(vfs, "/sd")
-        directory_path = "/sd/" # si une carte SD est présente, le repertoire par defaut est le root de la carte
+        uos.mount(vfs, "/sd") # je mount la carte SD dans le Filesystem
+        directory_path = "/sd/" # je change le repertoire pour pointer sur la carte memoire
         
 
-extension = ".bmp"
+extension = ".bmp" # filtre pour seulement ramasser les images
 
-# Filter for files ending with the specified extension
-txt_files_array = [file for file in uos.listdir(directory_path) if file.endswith(extension)]
+txt_files_array = [file for file in uos.listdir(directory_path) if file.endswith(extension)] # je charge la liste des fichiers dans un array
+
+#permet de changer l'orientation de l'ecran si besoin
 display.rotation(0) # 0-Portrait, 1-Landscape, 2-Inverted Portrait,3-Inverted Landscape
 
+# le slideshow en boucle
 while True:
     for file in txt_files_array:
         Draw_BMP(str(directory_path+file))
