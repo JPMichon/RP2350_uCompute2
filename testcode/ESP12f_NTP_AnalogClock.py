@@ -20,6 +20,7 @@ CONFIG = {
         "DIAL": st7789.WHITE,
         "HOUR": st7789.WHITE,
         "DateBox": 0x45b0, #STEELBLUE
+        "DateBox_border": 0xff1f, #LIGHTYELLOW
         "MIN": 0x7BEF, # Gris clair
         "SEC": 0xF800, # Rouge
         "NTP": 0x7BEF, # Gris clair
@@ -108,6 +109,7 @@ def draw_analog_clock(hw, t):
     
     # Date sur le côté "Montre de luxe"
     f.fill_rect(cx+40, cy-9, 50, 16, c["DateBox"]) #petite boite pour la date
+    f.rect(cx+40, cy-9, 50, 16, c["DateBox_border"]) #petite boite pour la date
     date_str = "{:02d}/{:02d}".format(t[2], t[1])
     f.large_text(date_str, cx+45, cy-5, 1, c["TXT"])
     
