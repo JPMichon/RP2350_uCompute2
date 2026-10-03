@@ -1,13 +1,28 @@
-# RP2350_uCompute2
-Plateforme de développement basé sur un RP2350
-taille: 96mm x 42mm
-<img width="2812" height="1257" alt="image" src="https://github.com/user-attachments/assets/fe666037-9144-4d45-a901-445b3db0c9fb" />
+🚀 RP22350 uCompute2
 
+## [English version available here](./README.EN.md)
+
+
+Le **RP2350 uCompute2** est une plateforme de développement embarquée, autonome et hautement modulaire basée sur le microcontrôleur **Raspberry Pi Pico RP2350**. Conçue comme une solution matérielle tout-en-un, elle intègre un stockage étendu, des interfaces d'affichage polyvalentes ainsi qu'un écosystème de cartes filles interchangeables (Ethernet, WiFi, Radio, VGA), la rendant idéale pour les projets embarqués complexes, le prototypage réseau et l'apprentissage.
+
+La carte offre une double approche logicielle : elle peut être programmée et utilisée exactement comme un Raspberry Pi Pico classique, ou utiliser le GUI (uComputeOS) conçu pour cette plateforme. Ce mini-système d'exploitation écrit en MicroPython offre une interface graphique interactive pour explorer, copier et exécuter dynamiquement des scripts stockés dans la mémoire QFlash ou sur la carte Micro SD.
+
+Dimensions: 96mm x 42mm
+
+<img width="2812" height="1257" alt="image" src="https://github.com/user-attachments/assets/fe666037-9144-4d45-a901-445b3db0c9fb" />
 <BR>
 
+---
 
+# 🤖 Assistants de Codage IA
 
-## Caractéristiques:
+Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la RP2350 uCompute2, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
+
+💼 **[Mode Développeur Freelance de la RP2040 uCompute](RP2040_UCompute_FreelanceCoder.md)** Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre concept ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
+
+---
+
+## 🛠️ Spécifications Techniques & Dimensions
 
 - RP2350 
 - LCD 1.3" 240x240 IPS ST7789
@@ -24,7 +39,9 @@ taille: 96mm x 42mm
 - DEL connecté au port standard GP25
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
+- Dimensions: 96mm x 42mm
 <BR>
+
  [!IMPORTANT] :
     le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.<BR><BR>
 
