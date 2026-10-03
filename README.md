@@ -45,10 +45,10 @@ Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous
 
 ---
 
-### Le bornier IOs :
+### Le bornier IOs (1x14 Pins Header):
 Le bornier (pins Header) facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
 
-### Composition détaillée du bornier d'extension H1 (1x14 Broches) :
+### Alimentation & Signaux:
 1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
 2. **3.3V** (Régulée via l'AP2114H-3.3TRG1)
 3. **GND** (Masse commune)
