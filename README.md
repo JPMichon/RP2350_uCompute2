@@ -45,8 +45,8 @@ Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous
 
 ---
 
-### Focus sur l'évolution du bornier IOs (H1) :
-Le bornier H1 facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
+### Le bornier IOs :
+Le bornier (pins Header) facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
 
 ### Composition détaillée du bornier d'extension H1 (1x14 Broches) :
 1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
