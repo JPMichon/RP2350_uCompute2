@@ -7,9 +7,10 @@ Le **RP2350 uCompute2** est une plateforme de développement embarquée, autonom
 
 La carte offre une double approche logicielle : elle peut être programmée et utilisée exactement comme un Raspberry Pi Pico classique, ou utiliser le GUI (uComputeOS) conçu pour cette plateforme. Ce mini-système d'exploitation écrit en MicroPython offre une interface graphique interactive pour explorer, copier et exécuter dynamiquement des scripts stockés dans la mémoire QFlash ou sur la carte Micro SD.
 
-Dimensions: 96mm x 42mm
+
 
 <img width="1406" height="628" alt="image" src="https://github.com/user-attachments/assets/fe666037-9144-4d45-a901-445b3db0c9fb" />
+_Dimensions: 96mm x 42mm_
 <BR>
 
 ---
