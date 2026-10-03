@@ -1,4 +1,4 @@
-# 🚀 RP2350 uCompute2
+# :computer: RP2350 uCompute2
 
 ## [English version available here](./README.EN.md)
 
