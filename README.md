@@ -1,4 +1,4 @@
-# 🚀 RP22350 uCompute2
+# 🚀 RP2350 uCompute2
 
 ## [English version available here](./README.EN.md)
 
