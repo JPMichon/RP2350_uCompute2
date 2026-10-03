@@ -11,9 +11,7 @@ La carte offre une double approche logicielle : elle peut être programmée et u
 
 <img width="1406" height="628" alt="image" src="https://github.com/user-attachments/assets/fe666037-9144-4d45-a901-445b3db0c9fb" />
 
-_Dimensions: 96mm x 42mm_
-
-<BR>
+_Dimensions: 96mm x 42mm_ <BR>
 
 ---
 
