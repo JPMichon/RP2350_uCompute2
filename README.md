@@ -19,7 +19,7 @@ _Dimensions: 96mm x 42mm_ <BR>
 
 Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la RP2350 uCompute2, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
 
-💼 **[Mode Développeur Freelance de la RP2040 uCompute](RP2040_UCompute_FreelanceCoder.md)** Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre concept ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
+💼 **[Mode Développeur Freelance de la uCompute](RP2040_UCompute_FreelanceCoder.md)** Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre concept ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
 
 ---
 
