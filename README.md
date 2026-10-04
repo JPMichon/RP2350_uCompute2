@@ -23,13 +23,13 @@ Ce projet est sous licence **CC BY-NC-SA 4.0**. Les fichiers **Gerber** ainsi qu
 
 ⚠️ **Niveau technique requis :** L'assemblage manuel du PCB d'origine demande une **expertise certaine en soudure CMS (SMD)**. Le microcontrôleur principal nécessite idéalement l'utilisation d'une station à air chaud ou d'une plaque chauffante. 
 
-💡 **Alternative pour le prototypage :** Si vous ne souhaitez pas souder de composants de surface, sachez qu'à partir des schémas électriques fournis, il est tout à fait possible de construire un prototype fonctionnel à l'aide d'une **plaque de prototypage** (*Breadboard* ou *Protoboard*). Il vous suffira d'utiliser un module Raspberry Pi Pico (RP2040) ou Pico 2 (RP2350) classique et de câbler les composants (écran, lecteur SD, etc.) sur les GPIO logiques correspondants.
+💡 **Alternative pour le prototypage :** Si vous ne souhaitez pas souder de composants de surface, sachez qu'à partir des schémas électriques fournis, il est tout à fait possible de construire un prototype fonctionnel à l'aide d'une **plaque de prototypage** (*Breadboard* ou *Protoboard*). Il vous suffira d'utiliser **un module Raspberry Pi Pico (RP2040) ou Pico 2 (RP2350) classique** et de câbler les composants (écran, lecteur SD, etc.) sur les GPIO logiques correspondants.
 
 ---
 
 # 🤖 Assistants de Codage IA
 
-Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la RP2350 uCompute2, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
+Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la **RP2350 uCompute2**, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles!
 
 💼 **[Mode Développeur Freelance de uCompute](RP2040_UCompute_FreelanceCoder.md)** Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre concept ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
 
@@ -53,7 +53,7 @@ Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
 - Dimensions: 96mm x 42mm
-<BR>
+<br>
 
 ---
 
@@ -61,12 +61,12 @@ Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous
 Le bornier (pins Header) facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
 
 ### Alimentation & Signaux:
-1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
-2. **3.3V** (Régulée via l'AP2114H-3.3TRG1)
-3. **GND** (Masse commune)
-4. **UART 0** : `GP0` (TX) & `GP1` (RX)
-5. **2 Entrées Analogiques (ADC) :** `GP27` (ADC1) & `GP28` (ADC2)
-6. **6 Broches Numériques (GPIO) :** `GP16`, `GP17`, `GP18`, `GP19`, `GP22`, `GP24`
+• **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)<br>
+• **3.3V** (Régulée via l'AP2114H-3.3TRG1)<br>
+• **GND** (Masse commune)<br>
+• **UART 0** : `GP0` (TX) & `GP1` (RX)<br>
+• **2 Entrées Analogiques (ADC) :** `GP27` (ADC1) & `GP28` (ADC2)<br>
+• **6 Broches Numériques (GPIO) :** `GP16`, `GP17`, `GP18`, `GP19`, `GP22`, `GP24`<br>
 <BR>
 
 > [!CAUTION]
@@ -134,12 +134,13 @@ Tous les modules de la **serie uCompute** sont compatibles avec le **RP2350 uCom
 ### 1. Modules de Communication (Socket Arrière)
 L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :
 
-<img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
+>
 * **Module Ethernet (W5500) :** Apporte une connectivité réseau filaire stable en SPI. (requiert un firmware spécial)
+* <img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br
 * **Module WiFi (ESP-12F) :** Carte d'adaptation embarquant un module ESP8266 pour ajouter une connectivité Wi-Fi.
 *  <img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
 * **Module Radio (NRF24L01 - GT-24 Mini.MK1) :** Adaptateur doté d'un connecteur 2x4 broches femelle pour liaisons radio point à point (2.4 GHz) à basse consommation.<br>
-<img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
+* <img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
 
 ---
 
