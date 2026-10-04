@@ -133,11 +133,11 @@ The mechanical and electrical footprint is compatible with several interchangeab
 
 * **Ethernet Module (W5500)**: Provides stable wired network connectivity over SPI (requires a specific firmware).<br>
 _• Commercially available from multiple third-party vendors._<br>
-*<img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
+<img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
 * **WiFi Module (ESP-12F)**: Adapter board featuring an ESP8266 module to add Wi-Fi connectivity.<br>
-*  <img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
+  <img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
 * **Radio Module (NRF24L01 - GT-24 Mini.MK1)**: Adapter equipped with a 2x4 female pin header for low-power, point-to-point radio links (2.4 GHz).<br>
-* <img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
+ <img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
 
 ---
 
