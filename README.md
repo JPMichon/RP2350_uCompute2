@@ -77,29 +77,43 @@ La façon la plus usuelle est d'alimenter le circuit via le connecteur USB. Néa
 ## Assignation des IOs
 
 ```Python
-_MicroSD_Detect = 7 # détection de la présence d'une carte MicroSD (GP7)
-_MicroSD_Select = 13 # définition de la pin Select du SDCARD (GP13)
-_W5500_Select = 8 # définition de la pin Select du W5500 (GP8)
-_W5500_Reset = 10 # définition de la pin Reset du W5500 (GP10)
-_SPI1_SCK = 14 # SPI1_shared Clock
-_SPI1_MOSI = 15 # SPI1_shared MOSI
-_SPI1_MISO = 12 # SPI1_shared MISO
-_ST7789_SCK = 2 # définition de la pin Clock du ST7789 (GP2) SPI0
-_ST7789_MOSI = 3 # définition de la pin MOSI du ST7789 (GP3) SPI0
-_ST7789_RESET = 4 # définition de la pin Reset du ST7789 (GP4)
-_ST7789_DC = 5 # définition de la pinSelect du ST7789 (GP5)
-_ST7789_BL = 6 # définition de la pinBacklit du ST7789 (GP6)
-_Led_System = 25 # définition du port  del systeme (GP25)
-_I2C_SDA = 20 # définition de Data du I2C(0) (GP20)
-_I2C_SCL = 21 # définition de SCL du I2C(0) (GP21)
-_Buzzer = 11 # définition du  buzzer (GP11)
-_NeoPixel = 23 # définition du port NeoPixel (GP23)
-_EEPROM_ADDR = 0x50 # adresse du eeprom
-_Boutons = 26 # définition du port analogue des boutons (GP26)
-_UART = 0 # UART par defaut
-_TX_PIN = 0 # TX Pin (GP0)
-_RX_PIN = 1 # TX Pin (GP1)
+# Configuration des broches pour les Assistants de Codage IA & MicroPython
+# Basé sur le schéma uCompute et uCompute2
+
+_MicroSD_Detect = 9   # Définition de la présence d'une carte MicroSD (GP9)
+_MicroSD_Select = 5   # Définition de la pin Select du lecteur SD (GP5)
+
+_w5500_Select   = 6   # Définition de la pin Select du W5500 (GP6)
+_w5500_Reset    = 7   # Définition de la pin Reset du W5500 (GP7)
+
+_SPI1_SCK       = 4   # SPI_SCK partagé (GP4)
+_SPI1_MOSI      = 3   # SPI_MOSI partagé (GP3)
+_SPI1_MISO      = 2   # SPI_MISO partagé (GP2)
+
+_st7789_SCK     = 10  # Définition de la pin Clock du ST7789 (GP10)
+_st7789_MOSI    = 11  # Définition de la pin MOSI du ST7789 (GP11)
+_st7789_RESET   = 12  # Définition de la pin Reset du ST7789 (GP12)
+_st7789_DC      = 13  # Définition de la pin DC du ST7789 (GP13)
+_st7789_BL      = 14  # Définition de la pin Backlight du ST7789 (GP14)
+
+_Led_System     = 25  # Définition du port DEL système (GP25)
+
+_I2C_SDA        = 21  # Définition de Data du I2C(0) (GP21)
+_I2C_SCL        = 20  # Définition de SCL du I2C(0) (GP20)
+
+_Buzzer         = 15  # Définition du buzzer (GP15)
+_NeoPixel       = 23  # Définition du port NeoPixel (GP23)
+
+_EEPROM_ADDR    = 0x50 # Adresse de l'EEPROM I2C
+
+_Boutons        = 26  # Définition du port analogue des boutons (GP26 / ADC0)
+
+_UART           = 0   # UART par défaut
+_TX_PIN         = 0   # TX Pin (GP0)
+_RX_PIN         = 1   # RX Pin (GP1)
+
 ```
+
 ---
 
 ## 🔌 Écosystème de Modules d'Extension (Add-ons)
