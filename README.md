@@ -129,6 +129,7 @@ _RX_PIN         = 1   # RX Pin (GP1)
 ## 🔌 Écosystème de Modules d'Extension (Add-ons)
 
 Le socket arrière double rangée et le connecteur d'affichage avant forment un port d'extension standardisé permettant d'adapter le matériel à l'application visée.
+Tous les modules de la **serie uCompute** sont compatibles avec le **RP2350 uCompute2**. Les modules sont disponibles sur le dépot du [RP2040 uCompute](https://github.com/JPMichon/RP2040_uCompute/tree/main/Modules).
 
 ### 1. Modules de Communication (Socket Arrière)
 L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :
