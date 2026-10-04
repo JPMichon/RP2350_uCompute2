@@ -17,6 +17,16 @@ _Dimensions: 96mm x 42mm_ <BR>
 
 ---
 
+## 🛠️ Fabrication & Assemblage (Do It Yourself)
+
+Ce projet est sous licence **CC BY-NC-SA 4.0**. Les fichiers **Gerber** ainsi que la liste des composants (BOM) sont disponibles dans le dossier `Hardware/`. Vous pouvez librement faire fabriquer les PCBs chez le fournisseur de votre choix.
+
+⚠️ **Niveau technique requis :** L'assemblage manuel du PCB d'origine demande une **expertise certaine en soudure CMS (SMD)**. Le microcontrôleur principal nécessite idéalement l'utilisation d'une station à air chaud ou d'une plaque chauffante. 
+
+💡 **Alternative pour le prototypage :** Si vous ne souhaitez pas souder de composants de surface, sachez qu'à partir des schémas électriques fournis, il est tout à fait possible de construire un prototype fonctionnel à l'aide d'une **plaque de prototypage** (*Breadboard* ou *Protoboard*). Il vous suffira d'utiliser un module Raspberry Pi Pico (RP2040) ou Pico 2 (RP2350) classique et de câbler les composants (écran, lecteur SD, etc.) sur les GPIO logiques correspondants.
+
+---
+
 # 🤖 Assistants de Codage IA
 
 Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la RP2350 uCompute2, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
