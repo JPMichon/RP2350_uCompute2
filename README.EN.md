@@ -204,5 +204,8 @@ The hardware (design files, schematics, layouts) and software of this project ar
 
 Check the [LICENSE](LICENSE) file to read the full terms.
 
+---
+
 ## ☕ Support the Project
 
+If you appreciate my work and would like to **buy me a coffee** to support my future soldering and coding projects, you can leave a [**tip on Ko-fi** ](https://ko-fi.com/jpmichon) This is completely voluntary and greatly appreciated!
