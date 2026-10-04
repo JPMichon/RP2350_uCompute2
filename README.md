@@ -8,7 +8,7 @@ Le **RP2350 uCompute2** est une plateforme de développement embarquée, autonom
 La carte offre une double approche logicielle : elle peut être programmée et utilisée exactement comme un Raspberry Pi Pico classique, ou utiliser le GUI (uComputeOS) conçu pour cette plateforme. Ce mini-système d'exploitation écrit en MicroPython offre une interface graphique interactive pour explorer, copier et exécuter dynamiquement des scripts stockés dans la mémoire QFlash ou sur la carte Micro SD.
 
 >[!NOTE]
->Pour les plus perspicaces, le **RP2350 uCompute2** est une évolution de mon projet **[RP2040 uCompute](https://github.com/JPMichon/RP2040_uCompute)**. Ces deux projets partagent le même ADN ; les modules sont donc compatibles entre eux et règle générale, le code en **MicroPython** est compatible entre les deux systèmes. Puisque le microcontrôleur est différent, il va de soi que vous ne pouvez pas reutiliser le firmware compilé pour le **RP2040** , car il ne tournera pas sur >le **RP2350**.
+>Pour les plus perspicaces, le **RP2350 uCompute2** est une évolution de mon projet **[RP2040 uCompute](https://github.com/JPMichon/RP2040_uCompute)**. Ces deux projets partagent le même ADN ; les modules sont donc compatibles entre eux et règle générale, le code en **MicroPython** est compatible entre les deux systèmes. Puisque le microcontrôleur est différent, il va de soi que vous ne pouvez pas réutiliser le firmware compilé pour le **RP2040** , car il ne tournera pas sur >le **RP2350**.
 <br>
 
 <img width="703" height="314" alt="image" src="https://github.com/user-attachments/assets/fe666037-9144-4d45-a901-445b3db0c9fb" />
