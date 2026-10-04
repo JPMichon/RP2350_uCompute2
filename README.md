@@ -21,7 +21,7 @@ _Dimensions: 96mm x 42mm_ <BR>
 
 Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la RP2350 uCompute2, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
 
-💼 **[Mode Développeur Freelance de la uCompute](RP2040_UCompute_FreelanceCoder.md)** Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre concept ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
+💼 **[Mode Développeur Freelance de uCompute](RP2040_UCompute_FreelanceCoder.md)** Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre concept ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
 
 ---
 
@@ -70,7 +70,7 @@ La tolérance au **5V** s'applique uniquement aux broches GPIO purement numériq
 La façon la plus usuelle est d'alimenter le circuit via le connecteur USB. Néanmoins, il est possible d'alimenter le circuit en **5V** à partir de la **broche 1** du connecteur Neopixel ou via la **pin 1** du bornier d'extension. La diode **D1** protège le port USB du retour de courant, mais il est toujours préférable de couper l'alimentation **5V** externe si vous raccordez le circuit à un ordinateur.
 
 > [!WARNING]
-> Le Vin absolu du régulateur AP2114H-3.3TRG1 est de 6.5v, Donc **Max 5.5v**.
+> Le Vin absolu du régulateur AP2114H-3.3TRG1 est de 6.5v, donc **max 5,5v**.
 
 ---
 
@@ -127,7 +127,7 @@ L'empreinte mécanique et électrique est compatible avec plusieurs technologies
 
 ## 🎓 Accessibilité & Compatibilité avec le Raspberry Pi Pico
 
-Si vous débutez en programmation ou en électronique, ne soyez pas intimidés ! Bien que la **RP2350 uCompute2** intègre de nombreux composants sur un seul circuit imprimé (VGA, Wi-Fi, MicroSD, etc.), **son cœur reste un Raspberry Pi Pico2 standard**. 
+Si vous débutez en programmation ou en électronique, ne soyez pas intimidés ! Bien que la **RP2350 uCompute2** intègre de nombreux composants sur un seul circuit imprimé (VGA, Wi-Fi, MicroSD, etc.), **son cœur reste un Raspberry Pi Pico 2 standard**. 
 
 Il y a en réalité **très peu de différences** fondamentales entre cette carte et un Pi Pico classique :
 * **Même puce :** Le microcontrôleur principal est le RP2350. Tout code écrit pour un Pico standard fonctionnera ici.
