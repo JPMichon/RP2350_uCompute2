@@ -135,12 +135,12 @@ Tous les modules de la **serie uCompute** sont compatibles avec le **RP2350 uCom
 L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :
 
 * **Module Ethernet (W5500) :** Ce moduleApporte une connectivité réseau filaire stable en SPI. (requiert un firmware spécial)<br>
-  _Ce module est disponible dans le commerce sur plusieurs sites de revente._ <br>
-  <img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
+_Ce module est disponible dans le commerce sur plusieurs sites de revente._ <br>
+<img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
 * **Module WiFi (ESP-12F) :** Carte d'adaptation embarquant un module ESP8266 pour ajouter une connectivité Wi-Fi.<br>
-   <img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
+<img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
 * **Module Radio (NRF24L01 - GT-24 Mini.MK1) :** Adaptateur doté d'un connecteur 2x4 broches femelle pour liaisons radio point à point (2.4 GHz) à basse consommation.<br>
- <img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
+<img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
 
 ---
 
