@@ -16,6 +16,12 @@ _Size: 96mm x 42mm_ <BR>
 
 ---
 
+## 🌐 Central Documentation<br>
+
+👉 [**uCompute Ecosystem Wiki**](https://github.com/JPMichon/uCompute-Ecosystem/wiki) — Hardware specifications, OS guides, and project overview.
+
+---
+
 ## 🛠️ Manufacturing & Assembly (Do It Yourself)
 
 This project is licensed under **CC BY-NC-SA 4.0**. The **Gerber files** as well as the Bill of Materials (BOM) are available in the Hardware/ folder. You are free to have the PCBs manufactured by the vendor of your choice.
